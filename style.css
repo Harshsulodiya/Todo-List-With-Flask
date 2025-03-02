@@ -1,0 +1,90 @@
+/* Import Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body with a subtle gradient background */
+body {
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Navbar customization to blend with the design */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+  font-weight: 600;
+  color: #333 !important;
+}
+
+/* Container for the update form with glassmorphism effect */
+.container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Form input and textarea styles */
+.form-control {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(85, 99, 222, 0.5);
+}
+
+/* Label styling */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Update button styling */
+.btn-primary {
+  background: #5563DE;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #4652b2;
+}
+
+/* Responsive container width */
+@media (max-width: 768px) {
+  .container {
+    margin: 15px;
+    padding: 20px;
+  }
+}
